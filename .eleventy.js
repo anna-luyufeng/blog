@@ -138,7 +138,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
-      "dd LLL yyyy"
+      "d LLLL yyyy"
     );
   });
 
@@ -190,7 +190,7 @@ module.exports = function (eleventyConfig) {
   }).use(markdownItAnchor, {
     permalink: true,
     permalinkClass: "direct-link",
-    permalinkSymbol: "#",
+    permalinkSymbol: "",
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
 

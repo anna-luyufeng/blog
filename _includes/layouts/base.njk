@@ -56,17 +56,17 @@
     <!-- css is inserted by optimize-html custom plugin -->
   </head>
   <body>
+    <nav>
+      <div id="nav">
+        <h1><a href="{{ '/' | url }}" title="Homepage">A.L. Blog</a></h1>
+        {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
+        {%- for entry in collections.all | eleventyNavigation %}
+          <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+        {%- endfor %}
+      </div>
+      <div id="reading-progress" aria-hidden="true"></div>
+    </nav>
     <header>
-      <nav>
-        <div id="nav">
-          <h1><a href="{{ '/' | url }}" title="Homepage">{{ metadata.title }}</a></h1>
-          {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-          {%- for entry in collections.all | eleventyNavigation %}
-            <a href="{{ entry.url | url }}">{{ entry.title }}</a>
-          {%- endfor %}
-        </div>
-        <div id="reading-progress" aria-hidden="true"></div>
-      </nav>
       <h1>{{ title }}</h1>
       {% block extraArticleHeader %}{% endblock %}
       <dialog id="message"></dialog>
@@ -83,10 +83,6 @@
         {% block article %}
           {{ content | safe }}
         {% endblock %}
-
-        {% if page.url and page.url.indexOf("/posts/") > -1 %}
-          <p>Published <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></p>
-        {% endif %}
       </article>
     </main>
 

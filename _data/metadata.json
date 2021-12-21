@@ -1,26 +1,26 @@
 {
-  "title": "Title of the website. Update me.",
-  "url": "https://update-me.com",
-  "domain": "update-me.com",
-  "description": "Description of the website. Update me.",
-  "genre": "Insert a schema.org genre",
+  "title": "Welcome to Anna Lu\u2019s website — Yu-Feng Lu",
+  "url": "https://blog.anna-yufeng.com",
+  "domain": "anna-yufeng.com",
+  "description": "I\u2019m Anna Lu. I'm a web developer. This is my website; I\u2019m real glad you\u2019re here.",
+  "genre": "Text",
   "googleAnalyticsId": "GA ID. Update me. Note, that this is not compatible with the not-yet-commonly used version 4 of Google Analytics",
   "sendWebVitals": false,
   "feed": {
-    "subtitle": "Subtitle. Update me.",
+    "subtitle": "I\u2019m Anna Lu. I\u2019m a web developer. This is my website; I\u2019m real glad you\u2019re here.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://update-me.com"
+    "id": "https://blog.anna-yufeng.com"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://update-me.com/feed/feed.json"
+    "url": "https://blog.anna-yufeng.com/feed/feed.json"
   },
   "author": {
-    "name": "Author Name. Update me.",
-    "twitterHandle": "update_me"
+    "name": "@littlegreening",
+    "twitterHandle": "@littlegreening"
   },
   "publisher": {
-    "name": "Publisher name. Update me."
+    "name": "Anna Lu"
   }
 }
