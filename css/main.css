@@ -460,13 +460,22 @@ footer {
 /* homepage: post list */
 #posts article {
   display: flex;
+  gap: 1rem;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1rem;
 }
 
+#posts span {
+  padding: 0.25rem 0.5rem;
+  background-color: var(--background-info-card);
+  font-size: 0.75rem;
+  border-radius: 6px;
+}
+
 #posts h4 {
   margin: 0;
+  flex: 1;
 }
 
 #posts time {

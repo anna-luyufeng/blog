@@ -1,6 +1,7 @@
 <div>
 {% for post in postslist | reverse %}
   <article>
+    {% if post.data.draft %}<span>WIP</span>{% endif %}
     <h4><a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a></h4>
     <time  datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
   </article>
