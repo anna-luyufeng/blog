@@ -9,8 +9,13 @@ templateClass: tmpl-post
    {% set wc = content | striptags | wordcount %}
    {% set wPerMinute = (wc / 240) + 1 %}
    <aside>
-     <p>Published <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></p>
-     <p><span class="reading">{{ wPerMinute | round }} min read</span></p>
+     <p>
+      Published <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+      {% if page.inputPath | lastModifiedDate %}
+        <small>(Last updated on <time datetime="{{ page.inputPath | lastModifiedDate  | htmlDateString }}">{{ page.inputPath | lastModifiedDate  | readableDate }}</time>)</small>
+      {% endif %}
+    </p>
+    <p><span class="reading">{{ wPerMinute | round }} min read</span></p>
    </aside>
 {% endblock %}
 
