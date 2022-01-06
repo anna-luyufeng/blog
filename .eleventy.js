@@ -241,7 +241,8 @@ module.exports = function (eleventyConfig) {
     // You can also pass this in on the command line using `--pathprefix`
     // pathPrefix: "/",
 
-    markdownTemplateEngine: "liquid",
+    // https://www.11ty.dev/docs/config/#default-template-engine-for-markdown-files, https://github.com/11ty/eleventy/issues/1291    
+    markdownTemplateEngine: false,
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
 
