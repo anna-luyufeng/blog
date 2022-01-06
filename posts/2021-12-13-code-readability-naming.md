@@ -23,10 +23,31 @@ tags:
 ## 名稱表達的內容
 
 - ❌  Who/When/Where/Why/How 不需要表達命名對象什麼時候使用 / 在哪裡使用 / 如何使用 / 由誰使用
+  - Who it calls/uses
+  - When/Where/Why/How it's called/used
+
 - ✅  What 形容是什麼 / 做什麼 → 命名對象責任明確化
   - **What** a type/value is
   - **What** a procedure/function does
 - 例外：callback （抽象方法）因為還沒決定要做什麼，因此會有「在什麼時候／哪裡被呼叫」的資訊來命名
+
+### Function
+
+```js
+👍 storeReceivedMessage() // => We can know what happens by the calling code
+
+👎 onMessageReceived() // => We can't know what happens
+```
+
+### Parameter
+
+```js
+👍 showHistory(shouldShowDialogOnError)
+
+👎 showHistory(isCalledFromMainActivity)
+```
+
+
 
 ## 文法
 
@@ -51,7 +72,7 @@ tags:
 
 ### 選擇不會模稜兩可的單字
 
-採用資訊量較多的單字，可參考字典獲同意字詞典，找出最適合的單字。
+採用資訊量較多的單字，可參考字典或同意字詞典，找出最適合的單字。
 
 也要避免難懂的專用名詞讓人難以理解。
 
@@ -85,7 +106,7 @@ tags:
 
 ## 實際應用／範例
 
--  `index` 是 zero-based，序數 `orinalNumber`
+-  `index` 是 zero-based，序數 `ordinalNumber`
 
 
 

@@ -5,41 +5,86 @@ layout: layouts/post.njk
 
 ---
 
+## 初始化
+
+需要先初始化才能使用 git 做版本控制，會建立一個 `.git` 檔案。
+
+若要重置 git 紀錄，刪掉此檔案即可。
+
+若不希望部分檔案不加入版本控制，建立 `.gitignore` 並放入檔案
+
+```bash
+git init
+
+rm -r .git # 刪掉 git 紀錄檔
+```
+
+## 查看目前狀態
+
+```
+git status
+```
+
+## 將檔案加入版本控制
+
+`untracked` （未被追蹤的）→ `staged`
+
+```bash
+git add <filename|filepattern>
+git add .	# 所有檔案
+git add *.js	# 所有 js 檔案
+```
+
+## 提交一個版本
+
+```bash
+git commit	# 會開啟 vim 編輯器
+git commit -m "<commit-message>"	# 提交信息
+git commit -a	# 檢測出有修改的檔案（不包含新增的檔案）
+```
+
+## 檢視紀錄
+
+```bash
+git log
+git log --graph
+git log --oneline
+```
+
+## 移動 HEAD
+
+```bash
+git checkout . # 編輯檔案後，恢復目錄到最後一次 commit 的狀態
+git checkout <commit_hash>
+```
+
+
+
 ## Branch 分支
 
 ```bash
-# 查看所有 branch
-git branch
+git branch	# 查看所有 branch
+git branch -v # branch 名稱與最新的 commit
+git branch <branch_name> # 新增 branch
 
-# 新增 branch
-git branch [BRANCH_NAME]
+git checkout -b <branch_name> # 新增 branch 並切換到該 branch
 
-# 新增 branch 並切換到該 branch
-git checkout -b [BRANCH_NAME] 
+git branch -d <branch_name>	# 刪除本地 branch
 
-# 刪除本地 branch
-git branch -d [BRANCH_NAME]
+git branch -m <new_branch_name>	# 重新命名當前 branch（-m 指 mv 的意思）
+git branch -m <old_branch_name> <new_branch_name>	# 重新命名 branch
 
-# 重新命名 branch
-git branch -m [OLD_BRANCH_NAME] [NEW_BRANCH_NAME]	
 
-# 重新命名當前 branch
-git branch -m [NEW_BRANCH_NAME]	
+git merge <branch_name> # 合併 branch 至當前的 branch，會產生新的 commit
+git rebase <branch_name> # 合併 branch ???，不會產生新的 commit
+git reset --hard HEAD~ # 取消合併 branch
 
-# 合併 branch
-git merge [BRANCH_NAME]
 
-# 取消合併 branch
-git reset --hard HEAD~
+git push origin :<old_branch_name> # 刪除 remote 舊的 branch
+git push origin --delete <old_branch_name> # 刪除 remote 舊的 branch
+git push origin :<old_branch_name> <new_branch_name> # 刪除 remote 舊的 branch 並將新的 branch push 到 remote
 
-# 刪除 remote 舊的 branch
-git push origin --delete [OLD_BRANCH_NAME]
-
-# 刪除 remote 舊的 branch 並將新的 branch push 到 remote
-git push origin :[OLD_BRANCH_NAME] [NEW_BRANCH_NAME]
-
-# push 新的分支到 remote，並重設新的分支的 upstream 分支
-git push origin -u [NEW_BRANCH_NAME]
+git push origin -u <new_branch_name> # push 新的分支到 remote，並重設新的分支的 upstream 分支
 ```
 
 ## Stash 暫存進度
@@ -74,7 +119,7 @@ git push --force-with-lease
 
 ### 改變檔名的大小寫
 
-- 與作業系統的檔案系統有關，macOS 無檔名大小寫的差別
+- 與作業系統的檔案系統有關，Windows 與 Mac OSX 無檔名大小寫的差別，視為同一個檔案。
 
 ```bash
 # 使用 git 的 mv 指令

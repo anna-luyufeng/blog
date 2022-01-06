@@ -1,7 +1,7 @@
 ---
 title: "[Browser] BOM & DOM"
 layout: layouts/post.njk
-
+draft: true
 ---
 
 ## DOM (Document Object Model)

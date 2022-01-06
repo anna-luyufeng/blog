@@ -1,8 +1,7 @@
 ---
 title: "[Browser] Selecting an element"
 layout: layouts/post.njk
-
-
+draft: true
 ---
 
 ## `document.getElementById`

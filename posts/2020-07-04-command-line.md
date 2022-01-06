@@ -2,6 +2,7 @@
 title: "[Mac/Linux] CLI 命令列"
 date: 2020-07-04T02:16:02Z
 layout: layouts/post.njk
+draft: true
 ---
 
 Command Line Interface（CLI）：以**文字**的方式跟電腦溝通
