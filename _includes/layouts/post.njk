@@ -8,10 +8,11 @@ templateClass: tmpl-post
 {% block extraArticleHeader %}
    {% set wc = content | striptags | wordcount %}
    {% set wPerMinute = (wc / 240) + 1 %}
+   {% set modifiedInDays =  (page.inputPath | lastModifiedDate - page.date) / (1000 * 3600 * 24) %}
    <aside>
      <p>
       Published <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
-      {% if page.inputPath | lastModifiedDate %}
+      {% if modifiedInDays > 1 %}
         <small>(Last updated on <time datetime="{{ page.inputPath | lastModifiedDate  | htmlDateString }}">{{ page.inputPath | lastModifiedDate  | readableDate }}</time>)</small>
       {% endif %}
     </p>
