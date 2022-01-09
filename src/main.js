@@ -93,43 +93,6 @@ document.documentElement.addEventListener("touchstart", prefetch, {
   passive: true,
 });
 
-const GA_ID = document.documentElement.getAttribute("ga-id");
-window.ga =
-  window.ga ||
-  function () {
-    if (!GA_ID) {
-      return;
-    }
-    (ga.q = ga.q || []).push(arguments);
-  };
-ga.l = +new Date();
-ga("create", GA_ID, "auto");
-ga("set", "transport", "beacon");
-var timeout = setTimeout(
-  (onload = function () {
-    clearTimeout(timeout);
-    ga("send", "pageview");
-  }),
-  1000
-);
-
-var ref = +new Date();
-function ping(event) {
-  var now = +new Date();
-  if (now - ref < 1000) {
-    return;
-  }
-  ga("send", {
-    hitType: "event",
-    eventCategory: "page",
-    eventAction: event.type,
-    eventLabel: Math.round((now - ref) / 1000),
-  });
-  ref = now;
-}
-addEventListener("pagehide", ping);
-addEventListener("visibilitychange", ping);
-
 /**
  * Injects a script into document.head
  * @param {string} src path of script to be injected in <head>

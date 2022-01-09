@@ -4,7 +4,6 @@
   "domain": "anna-yufeng.com",
   "description": "I'm Anna Lu. I'm a web developer. This is my website; I'm really glad you're here.",
   "genre": "Text",
-  "googleAnalyticsId": "GA ID. Update me. Note, that this is not compatible with the not-yet-commonly used version 4 of Google Analytics",
   "sendWebVitals": false,
   "feed": {
     "subtitle": "I'm Anna Lu. I'm a web developer. This is my website; I'm really glad you're here.",
