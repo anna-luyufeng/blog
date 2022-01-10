@@ -5,7 +5,33 @@ layout: layouts/post.njk
 
 <!-- @TODO: 什麼是 Shallow Copy? -->
 
+## Cheatsheet
+
+| Method      | Mutation | Return value                           |
+| ----------- | -------- | -------------------------------------- |
+| push()      | O        | Number（Array 長度）                   |
+| unshift()   | O        | Number（Array 長度）                   |
+| pop()       | O        | 被移掉的值                             |
+| shift()     | O        | 被移掉的值                             |
+| concat()    | O        | Array                                  |
+| findIndex() | X        | Number                                 |
+| find()      | X        | 第一個找到的值                         |
+| filter()    | X        | 符合條件的 Array                       |
+| forEach()   | O        | `undefined`                            |
+| map()       | X        | 長度一樣的 Array                       |
+| some()      | X        | Boolean                                |
+| every()     | X        | Boolean                                |
+| reduce()    | X        | 計算出來的值                           |
+| sort()      | O        | 長度一樣的 Array                       |
+| reverse()   | O        | 長度一樣的 Array                       |
+| slice()     | X        | 包含 startIndex 不含 endIndex 的 Array |
+| splice()    | O        | 被移掉的值 Array                       |
+| indexOf()   | X        | Number                                 |
+| join()      | X        | String                                 |
+| includes()  | X        | Boolean                                |
+
 ## Snippets
+
 ### 清空陣列
 
 ```js
