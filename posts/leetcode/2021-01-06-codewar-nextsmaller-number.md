@@ -1,4 +1,9 @@
-
+---
+title: ""
+date: 2022-01-10T17:41:34+08:00
+layout: layouts/post.njk
+draft: true
+---
 
 https://www.codewars.com/kata/5659c6d896bc135c4c00021e/train/javascript
 
