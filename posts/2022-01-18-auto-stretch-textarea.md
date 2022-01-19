@@ -9,3 +9,4 @@ draft: true
 
 https://blog.lalacube.com/mei/webComponent_msc-stretch-textarea.html?fbclid=IwAR0EX0dCAWJZiXaaciOsEVAY4W8d3QoKMOSqRAcPkDcomTFpS_Z217XY4iM
 
+https://css-tricks.com/the-cleanest-trick-for-autogrowing-textareas/
