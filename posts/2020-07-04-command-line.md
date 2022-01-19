@@ -2,18 +2,19 @@
 title: "[Mac/Linux] CLI 命令列"
 date: 2020-07-04T02:16:02Z
 layout: layouts/post.njk
-draft: true
 ---
 
 Command Line Interface（CLI）：以**文字**的方式跟電腦溝通
 
-Graphical User Interface（GUI）：
+Graphical User Interface（GUI）：以**圖形化輔助使用者操作介面**的方式與電腦溝通
 
-## 名詞釋疑
+## <!--名詞釋疑-->
 
-- Terminal
-- Shell => ??? Bash, Zsh, Fish, https://github.com/anna-luyufeng/note/issues/82
-- Console
+<!--Terminal-->
+
+<!--Shell => ??? Bash, Zsh, Fish, https://github.com/anna-luyufeng/note/issues/82-- -->
+
+<!--Console-->
 
 ## Terminal 視窗操作技巧
 
@@ -28,7 +29,6 @@ Graphical User Interface（GUI）：
 ```bash
 # 
 date
-
 
 # manual 指令使用說明書，按 q 離開
 man

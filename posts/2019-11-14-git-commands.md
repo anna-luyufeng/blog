@@ -21,7 +21,7 @@ rm -r .git # 刪掉 git 紀錄檔
 
 ## 查看目前狀態
 
-```
+```bash
 git status
 ```
 
@@ -103,6 +103,13 @@ git stash apply stash@{[STASH_NUMBER]}
 
 # 刪除 stash
 git stash drop stash@{[STASH_NUMBER]} 
+```
+
+## Remote 遠端
+
+```bash
+git remote
+
 ```
 
 

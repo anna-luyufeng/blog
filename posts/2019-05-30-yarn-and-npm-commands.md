@@ -11,6 +11,7 @@ layout: layouts/post.njk
 | npm (v5)                                | Yarn (1.x)                                 |
 | --------------------------------------- | ------------------------------------------ |
 | `npm install`                           | `yarn`<br />`yarn --force`<br />`yarn add` |
+| `npm ci`                                | `yarn install --check-files`               |
 | **_(N/A)_**                             | `yarn add --flat`                          |
 | **_(N/A)_**                             | `yarn add --har`                           |
 | `npm install --no-package-lock`         | `yarn add --no-lockfile`                   |

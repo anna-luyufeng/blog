@@ -22,7 +22,7 @@ layout: layouts/post.njk
 
 ![image-20220109160913656](/img/image-20220109160913656.png)
 
-用來描述一個演算法在**最壞的情況**下（花最多步驟）輸入 n 個資料量完成計算，所需執行次數與 n 的關係。
+用來描述一個演算法在**最壞的情況**下（花最多步驟）輸入 n 個資料量完成計算，所需執行次數與 n 的走勢。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/g2o22C3CRfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -47,7 +47,9 @@ layout: layouts/post.njk
 | O(2^n)     | Exponential  | # Power Set: finding all the subsets on a set <br /># Fibonacci<br /># Travelling salesman problem using dynamic programming |
 | O(n!) | Factorial | # Find all permutations of a given set/string |
 
+如何衡量函式的時間複雜度？
 
+略過常數
 
 ```js
 const smallArray = [5, 3, 2, 35, 2];

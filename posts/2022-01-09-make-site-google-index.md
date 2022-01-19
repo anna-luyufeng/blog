@@ -2,12 +2,9 @@
 title: "[SEO] 如何讓我的網站可以被 Google 搜尋到？"
 date: 2022-01-09T13:17:30+08:00
 layout: layouts/post.njk
-draft: true
 ---
 
 ## 申請 Google Search Console
-
-https://developers.google.com/search/docs/beginner/search-console?hl=zh-tw
 
 ![截圖 2022-01-09 下午1.31.54](/img/%E6%88%AA%E5%9C%96%202022-01-09%20%E4%B8%8B%E5%8D%881.31.54.png)
 
@@ -20,3 +17,5 @@ https://developers.google.com/search/docs/beginner/search-console?hl=zh-tw
 ### 如何判斷網站是否在 Google 索引中？
 
 使用 `site:` 語法搜尋網站的首頁網址，如果查得到相關結果，就代表 Google 已為網站建立索引
+
+https://developers.google.com/search/docs/beginner/search-console?hl=zh-tw
