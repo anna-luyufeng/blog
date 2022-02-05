@@ -196,9 +196,7 @@ Babel plugin to transpile import() to a deferred require(), for node. Matches th
 
 babel-polyfill
 
-### has umet peer dependency
-
-### has incorrect peer dependency 
+### 
 
 為什麼 `webpack.config.js` 要設定 babel 也同時也有 `babel.config.js`？
 

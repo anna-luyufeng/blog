@@ -7,9 +7,10 @@ draft: true
 
 ```js
 console.log( 0.1 + 0.2 == 0.3 ); // false
+// 0.1 + 0.2 = 0.30000000000000004
 ```
 
-因為數字是以二進制的形式處存在記憶體內，一個 1 和 0 的序列。但在十進制的數字系統中 `0.1` 這樣的小數，實際在二進制形式中是無限循環小數。
+因為數字是以二進制（binary form）的形式處存在記憶體內，一個 1 和 0 的序列。但在十進制的數字系統中 `0.1` 這樣的小數，實際在二進制形式中是無限循環小數。
 
 不僅僅只會在 JavaScript 內發生
 
@@ -26,3 +27,9 @@ toFixed
 
 
 - [不精确的计算](https://zh.javascript.info/number#bu-jing-que-de-ji-suan)
+-  [Floating-Point Guide](http://floating-point-gui.de/)
+
+https://jsy.tw/blog/1878/javascript-decimal-js/
+
+https://blog.darkthread.net/blog/js-float-round-issue/
+

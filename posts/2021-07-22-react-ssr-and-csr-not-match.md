@@ -30,26 +30,26 @@ ReactDOM.hydrate(element, container[, callback]);
 ```jsx
 
 const useBrowserMounted = () => {
-  const [browserMounted, setBrowserMounted] = useState(false);
+  const [domMounted, setDomMounted] = useState(false);
 
   useEffect(() => {
     setBrowserMounted(true);
   }, []);
 
-  return browserMounted;
+  return domMounted;
 };
 ```
 
 ```jsx
 export default function App() {
-  const browserMounted = useBrowserMounted();
+  const domMounted = useDomMounted();
   
   return (
     <ReduxProvider store={context.store}>
       <ApplicationContext.Provider
         value={{
           context: {
-            browserMounted,
+            domMounted,
           },
         }}
       >
@@ -63,9 +63,9 @@ export default function App() {
 
 ```jsx
 export default function MyComponent() {
-	const { browserMounted } = useContext(ApplicationContext).context;
+	const { domMounted } = useContext(ApplicationContext).context;
   
-	if (!browserMounted) {
+	if (!domMounted) {
     return null;
   }
   
