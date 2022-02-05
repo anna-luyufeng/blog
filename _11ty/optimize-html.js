@@ -45,7 +45,10 @@ const purifyCss = async (rawContent, outputPath) => {
     !isAmp(content) &&
     !/data-style-override/.test(content)
   ) {
-    let before = require("fs").readFileSync("css/main.css", {
+
+    const cssFileName = isResume(outputPath) ? 'css/resume.css' :'css/main.css';
+
+    let before = require("fs").readFileSync(cssFileName, {
       encoding: "utf-8",
     });
 
@@ -121,4 +124,8 @@ module.exports = {
 
 function isAmp(content) {
   return /\<html amp/i.test(content);
+}
+
+function isResume(path) {
+  return /\/resume/i.test(path);
 }
