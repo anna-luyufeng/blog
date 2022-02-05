@@ -1,20 +1,45 @@
 ---
-title: ""
+title: "[JS] Babel 與他的插件小夥伴"
 date: 2022-01-28T10:25:21+08:00
 layout: layouts/post.njk
 draft: true
 
 ---
 
-ES6+ 語法 → ES5
+## 什麼是 Babel？
+
+將 ES6(ECMAScript 2015+) 版本的程式碼轉換為向下相容的 JavaScript 語法，以便在當前和舊版本的瀏覽器或其他環境中執行
+
 
 babel.config.js
 
 推薦用 JavaScript 寫設定檔，而不是 JSON，這樣可以根據環境動態配置需要的 presets 和 plugins
 
+### @babel/core
+
+Babel 的核心功能
+
 ### @babel/preset-env
 
-- presets 用來編譯的預置
+用來設定預設執行環境，不用管理哪些語法需要轉換，就可以在目標環境中使用最新的 JavaScript 語法
+
+```js
+{
+  "presets": ["@babel/preset-env"]
+}
+```
+
+建議使用 Browserslist 來設定目標環境（Babel 預設）
+
+```json
+// package.json
+"browserslist": [
+  ">1%",
+  "last 4 versions",
+  "Firefox ESR",
+  "not ie < 9"
+],
+```
 
 透過 targets 讓 Babel 知道目標環境，從而只轉譯環境不支援語法
 
@@ -29,9 +54,8 @@ polyfill 直譯是墊片的意思
 
 Babel 把 ES6 的標準分為 syntax 和 built-in 兩種型別。
 
-syntax 指的是語法，如 const、=>
-
-built-in 可以通過改寫覆蓋的語法，如 includes、Promise
+- syntax 指的是語法，如 const、=> （箭頭函式）
+- built-in 可以通過改寫覆蓋的語法，如 includes、Promise
 
 預設只轉譯 syntaxt 型別的，built-in 需要透過 @babel/polyfill 完成轉譯
 
@@ -64,7 +88,7 @@ ref: https://github.com/babel/babel/issues/10271#issuecomment-528379505
 
 https://www.babeljs.cn/docs/babel-register
 
-babel-register 實際上為require加了一個鉤子（hook），之後所有被 node 引用的 .es6、.es、.jsx 以及 .js 文件都會先被 Babel 轉碼。
+babel-register 實際上為 require 加了一個鉤子（hook），之後所有被 node 引用的 .es6、.es、.jsx 以及 .js 文件都會先被 Babel 轉碼。
 
 透過 require 是其中一種使用 Babel 的方式，它會將自己綁定到 node.js 的 `require` 上，並且在運作時自動的編譯
 （過去 node.js 對 ES6 的支援度不是很好，babel/register 會將 ES6 語法轉換成 ES5，而現在基本上不會需要用到此套件）
