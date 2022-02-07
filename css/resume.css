@@ -57,6 +57,10 @@ blockquote a:hover {
   color: #48ac98;
 }
 
+code {
+  font-size: 14px;
+}
+
 a {
   color: #48ac98;
 }
@@ -122,7 +126,7 @@ h3 {
 }
 
 p {
-  margin: .6em 0 16px;
+  margin: 0 0 16px;
   padding: 0;
   display: block;
   font-size: 104%;
@@ -130,7 +134,7 @@ p {
 }
 
 ul {
-  margin: 0 0 0 10px;
+  margin: 0 0 24px 10px;
   padding: 0;
 }
 
@@ -163,18 +167,17 @@ ul dl dd {
 }
 
 ol {
-  margin: 0;
-  padding: 0 0 .75em;
-  width: 84%;
-  display: inline-block;
+  margin: 0 0 24px 0;
+  padding: 0;
+  display: flex;
+  gap: 16px;
+  list-style: none;
 }
 
 ol li {
-  margin: 0 0 0 1em;
+  flex: 1;
+  margin: 0;
   padding: 0;
-  width: 100%;
-  line-height: 24px;
-  font-size: 14px;
 }
 
 dl {
@@ -265,11 +268,10 @@ dl em {
     padding: 0 4em 0 0;
   }
   ol {
-    float: left;
     margin: 0.6em 0 0;
   }
   ol li {
-    width: 33%;
+   
     margin: 0;
   }
   ol li:nth-child(3n) {
@@ -306,12 +308,12 @@ dl em {
     margin-left: 40px;
   }
   ol {
-    margin: 0 0 0 2em;
+    margin: 0;
     padding-bottom: 0;
     width: 100%;
+    flex-direction: column;
   }
   ol li {
-    width: 33%;
     margin: 0;
   }
   ol li:nth-child(1),
@@ -340,7 +342,9 @@ dl em {
 
 
 @media screen and (max-width: 625px) {
-  
+  ul {
+    margin-left: 10px;
+  }
   ul li {
     width: 100%;
   }
@@ -356,17 +360,21 @@ dl em {
   }
   p {
     margin-left: 5px;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 16px;
   }
-  p strong, p em {
+  p > strong {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  p em  {
     font-size: 14px;
     line-height: 20px;
   }
+
   ol li {
-    width: 50%;
     margin: 0;
-    font-size: 12px;
   }
 }
 
