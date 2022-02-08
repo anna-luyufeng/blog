@@ -19,7 +19,7 @@ layout: layouts/resume.njk
 Senior Web Engineer *__Dec 2021 - Present__*
 Web Engineer *__Feb 2020 - Dec 2021__* 
 
-- Reduce shared component complexity originally used with multiple configuration files in 4 projects by refactoring to  integrate the configuration inside the component.
+- Reduce shared component complexity originally used with multiple configuration files in 4 projects by refactoring and integrating the configuration inside the component.
 - Simplify the process of marketers adding custom links to promote campaigns by themselves and the configuration of displaying different offerings in 11 regions on the website's main menu by redesigning the structure of the menu component.
 - Boosted up the colleague's efficiency to manage and publish content by designing the complete user flow, user interface, and [information architecture diagram](https://uub8n0.axshare.com/) in 3 different internal content management systems. Developed 2 of them by CRA (Create React App) with Material UI and Ant Design (React component libraries).
 - Created an internal knowledge base for the web team and documented the information like onboarding guide for new members, development lifecycle, code styles guidelines, product know-how, etc.
