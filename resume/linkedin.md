@@ -2,6 +2,7 @@
 
 ```text
 • An innovative and fast-learning Front End Developer with 4 years of experience building and maintaining responsive websites in the IT industry. 
+• I jot down some notes about developing, reading, etc. here: https://blog.anna-yufeng.com/
 ```
 
 ## Experience
@@ -9,14 +10,13 @@
 ### Snapask
 
 ```
-• Effectively maintained and developed a service that is built by ReactJS and managed by 5 different repositories.
-• Migrated CI flow from Travis CI to GitHub Actions.
-• Designed the user flow, user interface, and information architecture for 3 different internal systems with great user experience, and developed 2 of them by using CRA (Create React App) with Material UI and Ant Design (React component library).
-• Cooperated efficiently with product designers and product managers to optimize the user interface and experience.
-• Developed and refactored with writing unit test by using Jest to make sure that the code works correctly.
-• Promoted team-oriented work environment by creating a repository to document the team and product knowledge, like development flow, coding style guide, new member onboarding guide, etc.
+• Reduce shared component complexity originally used with multiple configuration files in 4 projects by refactoring to  integrate the configuration inside the component.
+• Simplify the process of marketers adding custom links to promote campaigns by themselves and the configuration of displaying different offerings in 11 regions on the website's main menu by redesigning the structure of the menu component.
+• Boosted up the colleague's efficiency to manage and publish content by designing the complete user flow, user interface, and information architecture diagram in 3 different internal content management systems. Developed 2 of them by CRA (Create React App) with Material UI and Ant Design (React component libraries).
+• Created an internal knowledge base for the web team and documented the information like onboarding guide for new members, development lifecycle, code styles guidelines, product know-how, etc.
+• Refactored the mechanism of user language preference which is based on 5 different conditions with a unit test using Jest.
 
-# Technical Environment: ReactJS, Redux, Redux-Saga, React i18next, CSS Modules, Jest, AWS, Nginx, GA (Google Analytics), GTM (Google Tag Manager), Git.
+# Technical Environment: ReactJS, Redux, Redux-Saga, React i18next, CSS Modules, Jest, npm/Yarn, AWS, GA (Google Analytics), GTM (Google Tag Manager).
 ```
 
 ### Daydream Lab

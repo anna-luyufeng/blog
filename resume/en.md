@@ -7,8 +7,6 @@ layout: layouts/resume.njk
 
 ## Web Engineer
 
-An innovative and fast-learning Front End Developer with 4 years of experience building and maintaining responsive websites in the IT industry.
-
 > [blog.anna-yufeng.com](https://blog.anna-yufeng.com/) 
 > [linkedin.com/in/annalu-yufeng](https://www.linkedin.com/in/annalu-yufeng/) 
 > [anna.lu.yufeng@gmail.com](mailto:anna.lu.yufeng@gmail.com)
@@ -21,13 +19,12 @@ An innovative and fast-learning Front End Developer with 4 years of experience b
 Senior Web Engineer *__Dec 2021 - Present__*
 Web Engineer *__Feb 2020 - Dec 2021__* 
 
-- Effectively maintained and developed a service that is built by ReactJS and managed by 5 different repositories.
-- Migrated CI flow from Travis CI to GitHub Actions.
-- Cooperated efficiently with product designers and product managers to optimize the user interface and experience.
-- Developed and refactored with writing unit test by using Jest to make sure that the code works correctly.
-- Designed the user flow, user interface, and [information architecture diagram](https://uub8n0.axshare.com/) for 3 different internal systems with great user experience, and developed 2 of them by using CRA (Create React App) with Material UI and Ant Design (React component library).
-- Promoted team-oriented work environment by creating a repository to document the team and product knowledge, like development flow, coding style guide, new member onboarding guide, etc.
-- `Technical Environment: ReactJS, Redux, Redux-Saga, React i18next, CSS Modules, Jest, AWS, Nginx, GA (Google Analytics), GTM (Google Tag Manager).`
+- Reduce shared component complexity originally used with multiple configuration files in 4 projects by refactoring to  integrate the configuration inside the component.
+- Simplify the process of marketers adding custom links to promote campaigns by themselves and the configuration of displaying different offerings in 11 regions on the website's main menu by redesigning the structure of the menu component.
+- Boosted up the colleague's efficiency to manage and publish content by designing the complete user flow, user interface, and [information architecture diagram](https://uub8n0.axshare.com/) in 3 different internal content management systems. Developed 2 of them by CRA (Create React App) with Material UI and Ant Design (React component libraries).
+- Created an internal knowledge base for the web team and documented the information like onboarding guide for new members, development lifecycle, code styles guidelines, product know-how, etc.
+- Refactored the mechanism of user language preference which is based on 5 different conditions with a unit test using Jest.
+- `Technical Environment: ReactJS, Redux, Redux-Saga, React i18next, CSS Modules, Jest, npm/Yarn, AWS, GA (Google Analytics), GTM (Google Tag Manager).`
 
 [**Daydream Lab**](https://www.daydream-lab.com) 
 Front End Engineer *__Jul 2015 - Jan 2020__*
@@ -35,7 +32,7 @@ Part Time *__Sep 2014 - Jun 2015__*
 Internship	*__Jul - Aug 2014__*
 
 * Before 2018, built over 30 various websites by using Joomla! (open-source content management system).
-* After 2018, built 4 SPAs (single-page applications) including a booking service official site along with a dashboard, a government official website, and a content management system dashboard by using Vue.js.
+* After 2018, built 4 SPAs (single-page applications) including an online booking system with a dashboard, a government official website, and a content management system by using Vue.js.
 
 - Spearheaded to use Vue.js to build websites and use GitHub to manage source code.
 - Achieved the efficient communication with back-end engineers by defining RESTFul APIs using Postman Mock Server.
