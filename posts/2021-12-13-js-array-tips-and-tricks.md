@@ -332,7 +332,15 @@ array.splice(start, deleteCount, item1, item2, itemN)
 >
 > 它的意思是陣列會在原來的位置上操作並回傳，此時就不會需要額外的記憶體空間，也就是空間複雜度為 `O(1)` ，會將操作完的值覆蓋原陣列。
 
+#### Array.sort(compareFn)
 
+若沒有提供 `compareFn` ，JavaScript 會把不是 `undefined` 的元素轉成字串後依照 UTF-16 Unicode 編碼**位置**進行比較排序。`undefined` 則會放在陣列的最尾端。
+
+```js
+["cherry","banana"].sort() // ["banana","cherry"]
+[9, 80].sort() // [80, 9]
+[0, -1, -2, 1, 3, 2].sort() // [ -1, -2, 0, 1, 2, 3 ]
+```
 
 > 什麼是穩定排序法（Stable Sorting）？
 >
