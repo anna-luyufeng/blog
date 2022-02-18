@@ -49,7 +49,7 @@ Internship	*__Jul - Aug 2014__*
    Use the template [eleventy-high-performance-blog](https://www.industrialempathy.com/posts/eleventy-high-performance-blog/) which is based on [Eleventy](https://www.11ty.dev/) (a static site generator). Use Vercel to deploy. 
 2. **2019 The F2E 2nd Weekly Challenge・Hexschool**
    [anna-luyufeng/2019-thef2e](https://github.com/anna-luyufeng/2019-thef2e)
-   Self-challenge with 1 topic per week in 9 weeks. Use Vue.js to develop. The complete projects: [Pomodoro](https://anna-luyufeng.github.io/2019-thef2e/week1/), [Room Reservation](https://anna-luyufeng.github.io/2019-thef2e/week6/), [Anonymous Chat Room](https://anna-luyufeng.github.io/2019-thef2e/week7/).
+   Self-challenge with 1 topic per week in 9 weeks. Use Vue.js to develop.
 
 -----
 
